@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-5x_76&614=rhhqf3r#g62a9&z)l!j8s4!pcjaaa$igzy3gj4f^
 if os.environ.get('ENV') == 'PRODUCTION':
     DEBUG = False
 else:
-    DEBUG = True
+    DEBUG = False
 
 ALLOWED_HOSTS = ['napoleon1806.herokuapp.com']
 
