@@ -24,9 +24,9 @@ SECRET_KEY = 'django-insecure-5x_76&614=rhhqf3r#g62a9&z)l!j8s4!pcjaaa$igzy3gj4f^
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if os.environ.get('ENV') == 'PRODUCTION':
-    DEBUG = False
+    DEBUG = True
 else:
-    DEBUG = False
+    DEBUG = True
 
 ALLOWED_HOSTS = ['napoleon1806.herokuapp.com']
 
