@@ -3,16 +3,20 @@
     font-family: 'Renaissance-Regular';
     src: url("fonts/renaissance.woff") format('woff');
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+}
 html { font-size: 100%;}
 
 h1{
 	font-size:4em;
 	color: black;
 	font-family: 'Renaissance-Regular', arial;
-}
-
-.input{
-    background-color: 'blue';
 }
 
 
@@ -37,7 +41,10 @@ html {
 }
 
 
-
+.unite{
+    border-spacing : 0;
+    border-collapse : collapse;
+}
 
 table {
   width: 80%;

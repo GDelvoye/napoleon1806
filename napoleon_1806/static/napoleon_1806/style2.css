@@ -3,21 +3,78 @@
     font-family: 'Renaissance-Regular';
     src: url("fonts/renaissance.woff") format('woff');
 }
-
-@media only screen and (min-width: 768px) {
- table {
-  width: 80%;
-  height : 45%;
-  font-family: 'Renaissance-Regular', arial;
-  
-  /*padding: 2 10px;*/
-  margin-left: 1em;
-    font-size: 0.9em;
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
   font-weight: bold;
+  text-align: center; 
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+    text-align: left;
+  /*background: tomato;*/
+}
+
+.footer {
+  /*background: lightgreen;*/
+}
+
+.main {
+  text-align: left;
+  /*background: deepskyblue;*/
+}
+
+.aside-1 {
   
+  /*background: gold;*/
+}
+
+.aside-2 {
+  /*background: hotpink;*/
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1.5 0 0; }
+    
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper > * {
+  padding: 1px;
+}
+  .header {font-size: 0.4em; text-align: center; flex: 1 }
+   /*.main    { flex: 0.5 0 0 0; }*/
+  .aside-1 { order: 1; } 
+  .main    { order: 2; text-align: center; height:20%}
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+    .svgpie{ width: 70%; height: 70%;}
+    
+table {
+  width: 70%;
 }
 }
-html { font-size: 100%;}
+
+
+
+
+
+
+
+/*html { font-size: 100%;}*/
 
 h1{
 	font-size:4em;
@@ -36,25 +93,12 @@ html {
 
 
 
-.panel{
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 95%;
-    width: 90%;
-        
-}
 
 
-.unite{
-    border-spacing : 0;
-    border-collapse : collapse;
-}
 
 table {
   width: 80%;
-  height : 45%;
+  height : 10%;
   font-family: 'Renaissance-Regular', arial;
   
   /*padding: 2 10px;*/
@@ -116,9 +160,5 @@ caption {
     background-color: rgba(255, 0, 0, 1);
 }
 
-.styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
 
 
