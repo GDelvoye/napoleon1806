@@ -5,8 +5,8 @@ from . import views
 
 app_name = 'napoleon_1806'
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('index_ori', views.index, name='index'),
 ]
 urlpatterns += [
-    path('test', views.test, name='test'),
+    path('', views.test, name='test'),
 ]

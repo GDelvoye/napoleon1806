@@ -40,6 +40,15 @@
 
 @media all and (min-width: 600px) {
   .aside { flex: 1.5 0 0; }
+    html { 
+  background: url(images/wallpaper.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    
+
     
 }
 
@@ -49,6 +58,30 @@
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
+    html { 
+  background: url(images/wallpaper.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    .styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+    table {
+  width: 80%;
+  height : 20%;
+  font-family: 'Renaissance-Regular', arial;
+  
+  /*padding: 2 10px;*/
+  margin-left: 1em;
+    font-size: 1.9em;
+  font-weight: bold;
+  
+}
+
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -58,14 +91,33 @@
   .header {font-size: 0.4em; text-align: center; flex: 1 }
    /*.main    { flex: 0.5 0 0 0; }*/
   .aside-1 { order: 1; } 
-  .main    { order: 2; text-align: center; height:20%}
+  .main    { order: 2; text-align: right; height:20%}
   .aside-2 { order: 3; }
   .footer  { order: 4; }
-    .svgpie{ width: 70%; height: 70%;}
+    .svgpie{ width: 80%; height: 80%;}
     
-table {
-  width: 70%;
+/*table {
+  width: 100%;
+}*/
+html{
+    background: url(images/wallpaper-mobile.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+    table {
+  width: 90%;
+  height : 10%;
+  font-family: 'Renaissance-Regular', arial;
+  
+  /*padding: 2 10px;*/
+  margin-left: 1em;
+    font-size: 1.4em;
+  font-weight: bold;
+  
+}
+
 }
 
 
@@ -81,7 +133,7 @@ h1{
 	color: black;
 	font-family: 'Renaissance-Regular', arial;
 }
-
+/*
 
 html { 
   background: url(images/wallpaper.jpg) no-repeat center center fixed; 
@@ -89,24 +141,14 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 
 
 
 
 
-table {
-  width: 80%;
-  height : 10%;
-  font-family: 'Renaissance-Regular', arial;
-  
-  /*padding: 2 10px;*/
-  margin-left: 1em;
-    font-size: 1.4em;
-  font-weight: bold;
-  
-}
+
 caption {
     padding: 1em;
 }
@@ -154,10 +196,6 @@ caption {
                                       rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
-
-.styled:hover {
-    background-color: rgba(255, 0, 0, 1);
 }
 
 
