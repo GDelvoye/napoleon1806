@@ -27,7 +27,7 @@
 
 <div class="wrapper">
 <div class="header">
-  <h1>Aide de camp Napoléon 1806</h1>
+  <h1 id = "titre_page">Aide de camp Napoléon 1806</h1>
 </div>
 
     
@@ -89,6 +89,11 @@
     
     
 <script>
+    
+function change_language(){
+    document.getElementById('titre_page').innerHTML = "";
+    document.getElementById('titre_page').innerHTML = de_france;
+}
 
 function create_unite_svg(nb_fig, premier_rang, orientation, color){
     let w = 20;
