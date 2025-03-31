@@ -22,13 +22,15 @@
   .mobile-chart {
     display: block !important;
     margin: 50px auto;
+    max-width: 400px;
+    width: 90%;
   }
 
   .chart-container {
     display: flex;
-    justify-content: center;
-    /* Centre l'élément à l'intérieur */
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
     margin-top: 30px;
     /* Ajoute un peu d'espace au-dessus */
   }

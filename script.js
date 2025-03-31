@@ -68,6 +68,8 @@ let dataChart =  {
 };
 
 let optionsChart = {
+    rotation: -Math.PI / 2,
+    circumference: -2 * Math.PI,
     responsive: true,
     plugins: {
         legend: {
