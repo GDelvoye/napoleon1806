@@ -148,9 +148,9 @@ function expectedResult(nbDiceFrance, nbDicePrussia) {
         }
     }
     return [
-        parseFloat((100*prussiaVictory).toFixed(0)),
+        parseFloat((100*franceVictory).toFixed(0)),
         parseFloat((100*equality).toFixed(0)),
-        parseFloat((100*franceVictory).toFixed(0))
+        parseFloat((100*prussiaVictory).toFixed(0)),
     ]
 
 }  
