@@ -1,0 +1,118 @@
+/*@import url(https://fr.allfont.net/allfont.css?fonts=renaissance-regular);*/
+@font-face {
+  font-family: 'Renaissance-Regular';
+  src: url("assets/fonts/renaissance.woff") format('woff');
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em !important;
+    text-align: center;
+  }
+
+  body {
+    background-image: url('assets/images/wallpaper-mobile.jpg') !important;
+  }
+
+  .numeric-results, caption, .main-chart {
+    display: none;
+  }
+
+  .mobile-chart {
+    display: block !important;
+  }
+
+
+}
+
+h1 {
+  font-size: 4em;
+  color: black;
+  font-family: 'Renaissance-Regular', arial;
+}
+
+
+body {
+  font-size: 100%;
+  background: url("assets/images/wallpaper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.paneel>* {
+  margin-top: 5%;
+  width: 75%;
+  font-weight: bold;
+  font-family: 'Renaissance-Regular', arial;
+}
+
+table {
+  width: 80%;
+  margin-left: 1em;
+  font-size: 1.4em;
+
+}
+
+caption {
+  padding: 1em;
+}
+
+
+.french-button {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #FF6600;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #3399FF;
+  background-image: linear-gradient(to top left,
+      rgba(0, 0, 0, .2),
+      rgba(0, 0, 0, .2) 30%,
+      rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.prussian-button {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #FF6600;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #888888;
+  background-image: linear-gradient(to top left,
+      rgba(0, 0, 0, .2),
+      rgba(0, 0, 0, .2) 30%,
+      rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+    inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+}
+
+.mobile-chart {
+  display: none;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Aide de camp</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" type="image/png"
+            href="assets/images/napoleon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1>Aide-de-camp Napoléon 1806</h1>
+
+        <div class="paneel">
+            <table>
+                <tr>
+                    <td><table class="dice-input">
+                            <caption>Number of dice : </caption>
+                            <tr>
+                                <td>France </td>
+                                <td><input type="button"
+                                        onclick="decrementFrance()" value="-"
+                                        class="french-button"></td>
+                                <td width="27em"><div
+                                        id="number-dice-france">1</div></td>
+                                <td><input type="button"
+                                        onclick="incrementFrance()" value="+"
+                                        class="french-button"></td>
+                            </tr>
+                            <tr>
+                                <td>Prussia </td>
+                                <td><input type="button"
+                                        onclick="decrementPrussia()" value="-"
+                                        class="prussian-button"></td>
+                                <td><div id="number-dice-prussia">1</div></td>
+                                <td><input type="button"
+                                        onclick="incrementPrussia()" value="+"
+                                        class="prussian-button"></td>
+                            </tr>
+
+                        </table></td>
+                    <td rowspan="2">
+                        <div class="main-chart">
+                            <div class="chart-container">
+                                <canvas id="pieChart"></canvas>
+                            </div>
+                        </div>
+                    </td>
+
+                    <tr>
+                        <td><table class="numeric-results">
+                                <caption>Battle result : </caption>
+                                <div id="resulats">
+
+                                    <tr>
+                                        <td><svg width="20" height="20">
+                                                <rect width="20" height="20"
+                                                    style="fill:#3399FF;stroke-width:3;stroke:rgb(0,0,0)" />
+                                            </svg></td>
+                                        <td>French victory : </td>
+                                        <td><div id="france-numeric-result">33
+                                                %</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><svg width="20" height="20">
+                                                <rect width="20" height="20"
+                                                    style="fill:#FF6600;stroke-width:3;stroke:rgb(0,0,0)" />
+                                            </svg></td>
+                                        <td>Equality : </td>
+                                        <td><div
+                                                id="equality-numeric-result">50
+                                                %</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><svg width="20" height="20">
+                                                <rect width="20" height="20"
+                                                    style="fill:#888888;stroke-width:3;stroke:rgb(0,0,0)" />
+                                            </svg></td>
+                                        <td>Prussian victory : </td>
+                                        <td><div id="prussia-numeric-result">17
+                                                %</div></td>
+                                    </tr>
+
+                                </div>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="mobile-chart">
+                <div class="chart-container">
+                    <canvas id="pieChartMobile"></canvas>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="script.js"></script>
+
+        </body>
+    </html>
