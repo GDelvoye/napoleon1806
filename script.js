@@ -56,8 +56,8 @@ let dataChart =  {
     labels: ['France', 'Equality',  'Prussia'],
     datasets: [{
         data: expectedResult(nbDiceFrance, nbDicePrussia),
-        backgroundColor: ['#3399FF',  '#FF6600', '#888888'],
-        hoverBackgroundColor: ['#3399FF',  '#FF6600', '#888888'],
+        backgroundColor: ['#888888', '#FF6600', '#3399FF'],
+        hoverBackgroundColor: ['#888888', '#FF6600','#3399FF'],
     }]
 };
 

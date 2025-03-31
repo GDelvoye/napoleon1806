@@ -21,7 +21,16 @@
 
   .mobile-chart {
     display: block !important;
-    margin: 20px auto;
+    margin: 50px auto;
+  }
+
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    /* Centre l'élément à l'intérieur */
+    align-items: center;
+    margin-top: 30px;
+    /* Ajoute un peu d'espace au-dessus */
   }
 
 
