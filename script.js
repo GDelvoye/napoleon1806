@@ -21,7 +21,7 @@ function updateChart() {
 
     myChartMobile.data.datasets[0].data = results;
     myChartMobile.update();
-    updateNumericResults(results[2], results[1], results[0]);
+    updateNumericResults(results[0], results[1], results[2]);
 }
 
 function incrementFrance() {
@@ -53,12 +53,6 @@ function decrementPrussia() {
 }
 
 let dataChart =  {
-    // labels: ['Prussia', 'Equality', 'France',],
-    // datasets: [{
-    //     data: expectedResult(nbDiceFrance, nbDicePrussia),
-    //     backgroundColor: ['#888888', '#FF6600', '#3399FF'],
-    //     hoverBackgroundColor: ['#888888', '#FF6600','#3399FF'],
-    // }]
     labels: ['France','Equality', 'Prussia',],
     datasets: [{
         data: expectedResult(nbDiceFrance, nbDicePrussia),
@@ -68,8 +62,8 @@ let dataChart =  {
 };
 
 let optionsChart = {
-    rotation: -Math.PI / 2,
-    circumference: -2 * Math.PI,
+    rotation: 180,
+    circumference: 360,
     responsive: true,
     plugins: {
         legend: {
